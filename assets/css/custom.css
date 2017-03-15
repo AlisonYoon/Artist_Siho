@@ -185,6 +185,11 @@ a.text-danger:hover {
 
 
 /* ==== MEDIA QUERIES ==== */
+@media screen and (max-width : 1270px) {
+	.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+		display:none;
+	}
+}
 
 @media screen and (max-width : 991px) {
 	#instructor .container {

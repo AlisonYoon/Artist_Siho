@@ -18,6 +18,10 @@
 	<!-- Font Awesome Icons -->
 	<link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	
 	<!-- Custom CSS -->
 	<link href="assets/css/custom.css" rel="stylesheet">
 	
@@ -74,9 +78,15 @@
 
     <!-- HERO
     ================================================== -->
-    <section id="hero" data-type="background" data-speed="5">
+    <section id="carousel" data-type="background" data-speed="5">
     	<article>
-    		
+    		<div class="owl-carousel">
+              <div> <img src="assets/img/logo-badge.png" alt=""> </div>
+              <div> <img src="assets/img/icon-rocket.png" alt=""></div>
+              <div> <img src="assets/img/icon-pad.png" alt=""> </div>
+              <div> <img src="assets/img/icon-design.png" alt="">  </div>
+              <div> <img src="assets/img/ernest.png" alt="">  </div>
+            </div>
     	</article>
     </section>
 	
@@ -105,11 +115,16 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="assets/js/jquery-2.1.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     
     <script src="assets/js/main.js"></script>
     
     <script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript">$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});</script>
+	
   
 </body>
 </html>
