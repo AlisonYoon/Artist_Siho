@@ -154,9 +154,14 @@ a.text-danger:hover {
 .navbar .navbar-collapse {
     text-align:center;
 }
+.navbar-nav>li>a {
+    -webkit-transition: color .3s linear;
+    transition: color .3s linear;
+}
 .navbar-nav>li>a:hover {
     background: none;
-    border-bottom: 3px solid #333;
+    border-top: 3px solid #333;
+    margin-top: -3px;
 }
 .navbar-nav>li {
     margin:0 40px;
@@ -174,7 +179,10 @@ a.text-danger:hover {
     float:none;
     margin-left:-22px;
 }
-
+.navbar-nav>li>a>span {
+    font-size:1.5em;
+    font-weight: bold;
+}
 
 /* ==== Logo ==== */
 .navbar-inverse .navbar-brand {
@@ -182,12 +190,42 @@ a.text-danger:hover {
     text-align:center;
 }
 
+/* ==== Carousel Section ==== */
+.int-words {
+    text-align:center;
+    margin: 5% 0;
+}
+.owl-carousel .owl-stage-outer {
+    background: none;
+}
 
+.owl-carousel .owl-nav .owl-prev {
+    left:5%;
+}
+.owl-carousel .owl-nav .owl-next {
+    right:5%;
+}
+.owl-carousel .paint-subject {
+	position:absolute;
+    top:410px;
+    left:0;
+    padding:20px;
+    background:rgba(225,225,225,.5);
+}
+/* ==== Paintings Section ==== */
+#paintings h2 {text-align: center}
 
 /* ==== MEDIA QUERIES ==== */
+@media screen and (min-width : 1280px) {
+    .owl-carousel .owl-stage-outer {
+        width:80%;
+        height:600px;
+    }
+}
+
 @media screen and (max-width : 1270px) {
 	.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-		display:none;
+		
 	}
 }
 
